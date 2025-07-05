@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
 // filepath: c:\maid\maid_app\lib\main.dart
 Future<String> fetchStatus() async {
   final response = await http.get(
-    Uri.parse('https://9e49-154-222-4-193.ngrok-free.app/status'), // ใช้ลิงก์ ngrok backend จริง
+    Uri.parse('http://172.20.10.2:5000/status'), // ใช้ลิงก์ ngrok backend จริง
   );
   print('API response: ${response.body}');
   if (response.statusCode == 200) {

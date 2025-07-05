@@ -23,7 +23,7 @@ class _LoginPageState extends State<LoginPage> {
 
   try {
   final response = await http.post(
-  Uri.parse('https://9e49-154-222-4-193.ngrok-free.app/auth/login'), // ใช้ลิงก์ ngrok backend ที่ออนไลน์จริง
+  Uri.parse('http://172.20.10.2:5000/auth/login'), // ใช้ลิงก์ ngrok backend ที่ออนไลน์จริง
   headers: {'Content-Type': 'application/json'},
   body: jsonEncode(body),
 );
